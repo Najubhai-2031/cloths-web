@@ -5,11 +5,17 @@ import Contact from './pages/contact';
 import Shop from './pages/shop';
 import Testimonial from './pages/testimonial';
 import WhyWe from './pages/why';
+import Login from './pages/login';
+import Footer from './component/footer';
+import Header from './component/Header';
+import Register from './pages/register';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Header/>
+      <Register/>
+      <Footer/>
     </div>
   );
 }
