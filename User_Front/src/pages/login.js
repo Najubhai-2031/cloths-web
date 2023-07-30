@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../store/auth/actions";
 import { useNavigate } from "react-router";
-import AgencyImage  from "../assets/images/agency-img.jpg";
+import AgencyImage from "../assets/images/agency-img.jpg";
 
 const initialState = {
-  email: "",
-  pass: "",
+  uniqueId: "",
+  password: "",
 };
 
 const Login = () => {
@@ -50,20 +50,20 @@ const Login = () => {
             <div className="col-md-6 col-lg-5 px-0">
               <form onSubmit={(event) => handleSubmit(event)}>
                 <div>
-                <span>Email *</span>
+                  <span>Username or Email *</span>
                   <input
-                    type="email"
-                    placeholder="Email"
-                    name="email"
+                    type="text"
+                    placeholder="Username or Email"
+                    name="uniqueId"
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
                 <div>
-                <span>Password *</span>
+                  <span>Password *</span>
                   <input
                     type="password"
                     placeholder="Password"
-                    name="pass"
+                    name="password"
                     onChange={(e) => handleChange(e)}
                   />
                 </div>

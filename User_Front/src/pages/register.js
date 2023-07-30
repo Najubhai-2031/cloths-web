@@ -5,11 +5,13 @@ import { useNavigate } from "react-router";
 import AgencyImage from "../assets/images/agency-img.jpg";
 
 const initialState = {
-  name: "",
-  email: "",
-  phone: "",
-  pass: "",
-  dob: "",
+  name:"",
+  userName:"",
+  dob:"",
+  gender:"",
+  email:"",
+  password: "",
+  contact:"",
 };
 
 const Register = () => {
@@ -27,7 +29,6 @@ const Register = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(register({ data: state }));
-    console.log("state", state);
   };
   return (
     <>
@@ -54,7 +55,16 @@ const Register = () => {
             <div className="col-md-6 col-lg-5 px-0">
               <form onSubmit={(event) => handleSubmit(event)}>
                 <div>
-                <span>Name *</span>
+                  <span>Username *</span>
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    name="userName"
+                    onChange={(e) => handleChange(e)}
+                  />
+                </div>
+                <div>
+                  <span>Name *</span>
                   <input
                     type="text"
                     placeholder="Name"
@@ -63,7 +73,7 @@ const Register = () => {
                   />
                 </div>
                 <div>
-                <span>Email *</span>
+                  <span>Email *</span>
                   <input
                     type="email"
                     placeholder="Email"
@@ -72,35 +82,35 @@ const Register = () => {
                   />
                 </div>
                 <div>
-                <span>Phone Number *</span>
+                  <span>Contact Number *</span>
                   <input
                     type="text"
-                    placeholder="Phone"
-                    name="phone"
+                    placeholder="Contact Number"
+                    name="contact"
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
                 <div>
-                <span>Password *</span>
+                  <span>Password *</span>
                   <input
                     type="password"
                     placeholder="Password"
-                    name="pass"
+                    name="password"
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
-                <div style={{display:"flex"}}>
+                <div style={{ display: "flex" }}>
                   <div>
-                    <span style={{marginRight:'10px'}}>Gender *</span>
+                    <span style={{ marginRight: "10px" }}>Gender *</span>
                   </div>
                   <div>
                     Male
                     <input
                       type="radio"
                       name="gender"
-                      value="Male"
+                      value="male"
                       onChange={(e) => handleChange(e)}
-                      style={{height:'20px'}}
+                      style={{ height: "20px" }}
                     />
                   </div>
                   <div>
@@ -108,14 +118,14 @@ const Register = () => {
                     <input
                       type="radio"
                       name="gender"
-                      value="Female"
+                      value="female"
                       onChange={(e) => handleChange(e)}
-                      style={{height:'20px'}}
+                      style={{ height: "20px" }}
                     />
                   </div>
                 </div>
                 <div>
-                <span>Date Of Birth *</span>
+                  <span>Date Of Birth *</span>
                   <input
                     type="date"
                     name="dob"

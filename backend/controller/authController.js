@@ -27,13 +27,16 @@ const signUp = async (req, res) => {
 };
 
 const login = async (req, res) => {
-  const { userName, password } = req.body;
+  const { uniqueId, password } = req.body;
 
-  const findUser = await user.findOne({ userName: userName });
+  let findUser = await user.findOne({ userName: uniqueId });
+  if(findUser == null){
+    findUser = await user.findOne({ email: uniqueId });
+  }
   if(findUser && await bcrypt.compareSync(password, findUser.password)){
     res.status(200).json({message: "Login Successfully.", data: findUser})
   } else {
-    res.status(400).json("Please enter valid credential.")
+    res.status(400).json({message: "Please enter valid credential."})
   }
 };
 
