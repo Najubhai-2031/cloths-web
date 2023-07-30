@@ -1,4 +1,12 @@
 import React from "react";
+import p1 from "../assets/images/p1.png";
+import p2 from "../assets/images/p2.png";
+import p3 from "../assets/images/p3.png";
+import p4 from "../assets/images/p4.png";
+import p5 from "../assets/images/p5.png";
+import p6 from "../assets/images/p6.png";
+import p7 from "../assets/images/p7.png";
+import p8 from "../assets/images/p8.png";
 
 const Shop = () => {
   return (
@@ -13,7 +21,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p1.png" alt="" />
+                    <img src={p1} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Ring</h6>
@@ -32,7 +40,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p2.png" alt="" />
+                    <img src={p2} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Watch</h6>
@@ -51,7 +59,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p3.png" alt="" />
+                    <img src={p3} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Teddy Bear</h6>
@@ -70,7 +78,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p4.png" alt="" />
+                    <img src={p4} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Flower Bouquet</h6>
@@ -89,7 +97,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p5.png" alt="" />
+                    <img src={p5} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Teddy Bear</h6>
@@ -108,7 +116,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p6.png" alt="" />
+                    <img src={p6} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Flower Bouquet</h6>
@@ -127,7 +135,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p7.png" alt="" />
+                    <img src={p7} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Watch</h6>
@@ -146,7 +154,7 @@ const Shop = () => {
               <div className="box">
                 <a href="">
                   <div className="img-box">
-                    <img src="images/p8.png" alt="" />
+                    <img src={p8} alt="" />
                   </div>
                   <div className="detail-box">
                     <h6>Ring</h6>

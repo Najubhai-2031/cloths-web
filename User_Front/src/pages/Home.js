@@ -1,184 +1,316 @@
 import React from "react";
-import p1  from '../assets/images/p1.png'
+import p1 from "../assets/images/p1.png";
+import p2 from "../assets/images/p2.png";
+import p3 from "../assets/images/p3.png";
+import p4 from "../assets/images/p4.png";
+import p5 from "../assets/images/p5.png";
+import p6 from "../assets/images/p6.png";
+import p7 from "../assets/images/p7.png";
+import p8 from "../assets/images/p8.png";
+import Gifts from "../assets/images/gifts.png"
+import savingImg from "../assets/images/saving-img.png"
+import sliderImg from "../assets/images/slider-img.png"
+import Line from "../assets/images/line.png"
 const Home = () => {
   return (
     <>
-      <section className="shop_section layout_padding">
-        <div className="container">
-          <div className="heading_container heading_center">
+      <div class="hero_area">
+        <section class="slider_section">
+          <div class="slider_container">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="detail-box">
+                          <h1>
+                            Welcome To Our <br />
+                            Gift Shop
+                          </h1>
+                          <p>
+                            Sequi perspiciatis nulla reiciendis, rem, tenetur
+                            impedit, eveniet non necessitatibus error distinctio
+                            mollitia suscipit. Nostrum fugit doloribus
+                            consequatur distinctio esse, possimus maiores
+                            aliquid repellat beatae cum, perspiciatis enim,
+                            accusantium perferendis.
+                          </p>
+                          <a href="">Contact Us</a>
+                        </div>
+                      </div>
+                      <div class="col-md-5 ">
+                        <div class="img-box">
+                          <img src={sliderImg} alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="detail-box">
+                          <h1>
+                            Welcome To Our <br />
+                            Gift Shop
+                          </h1>
+                          <p>
+                            Sequi perspiciatis nulla reiciendis, rem, tenetur
+                            impedit, eveniet non necessitatibus error distinctio
+                            mollitia suscipit. Nostrum fugit doloribus
+                            consequatur distinctio esse, possimus maiores
+                            aliquid repellat beatae cum, perspiciatis enim,
+                            accusantium perferendis.
+                          </p>
+                          <a href="">Contact Us</a>
+                        </div>
+                      </div>
+                      <div class="col-md-5 ">
+                        <div class="img-box">
+                          <img src={sliderImg} alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="detail-box">
+                          <h1>
+                            Welcome To Our <br />
+                            Gift Shop
+                          </h1>
+                          <p>
+                            Sequi perspiciatis nulla reiciendis, rem, tenetur
+                            impedit, eveniet non necessitatibus error distinctio
+                            mollitia suscipit. Nostrum fugit doloribus
+                            consequatur distinctio esse, possimus maiores
+                            aliquid repellat beatae cum, perspiciatis enim,
+                            accusantium perferendis.
+                          </p>
+                          <a href="">Contact Us</a>
+                        </div>
+                      </div>
+                      <div class="col-md-5 ">
+                        <div class="img-box">
+                          <img src={sliderImg} alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel_btn-box">
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <img src={Line} alt="" />
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="shop_section layout_padding">
+        <div class="container">
+          <div class="heading_container heading_center">
             <h2>Latest Products</h2>
           </div>
-          <div className="row">
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
+                  <div class="img-box">
                     <img src={p1} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Ring</h6>
                     <h6>
                       Price
                       <span>$200</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
-                    <img src="images/p2.png" alt="" />
+                  <div class="img-box">
+                    <img src={p2} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Watch</h6>
                     <h6>
                       Price
                       <span>$300</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
-                    <img src="images/p3.png" alt="" />
+                  <div class="img-box">
+                    <img src={p3} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Teddy Bear</h6>
                     <h6>
                       Price
                       <span>$110</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
-                    <img src="images/p4.png" alt="" />
+                  <div class="img-box">
+                    <img src={p4} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Flower Bouquet</h6>
                     <h6>
                       Price
                       <span>$45</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
-                    <img src="images/p5.png" alt="" />
+                  <div class="img-box">
+                    <img src={p5} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Teddy Bear</h6>
                     <h6>
                       Price
                       <span>$95</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
-                    <img src="../assets/images/p6.png" alt="" />
+                  <div class="img-box">
+                    <img src={p6} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Flower Bouquet</h6>
                     <h6>
                       Price
                       <span>$70</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
-                    <img src="images/p7.png" alt="" />
+                  <div class="img-box">
+                    <img src={p7} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Watch</h6>
                     <h6>
                       Price
                       <span>$400</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="box">
                 <a href="">
-                  <div className="img-box">
-                    <img src="images/p8.png" alt="" />
+                  <div class="img-box">
+                    <img src={p8} alt="" />
                   </div>
-                  <div className="detail-box">
+                  <div class="detail-box">
                     <h6>Ring</h6>
                     <h6>
                       Price
                       <span>$450</span>
                     </h6>
                   </div>
-                  <div className="new">
+                  <div class="new">
                     <span>New</span>
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <div className="btn-box">
+          <div class="btn-box">
             <a href="">View All Products</a>
           </div>
         </div>
       </section>
-      <section className="saving_section ">
-        <div className="box">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="img-box">
-                  <img src="images/saving-img.png" alt="" />
+
+      <section class="saving_section ">
+        <div class="box">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="img-box">
+                  <img src={savingImg} alt="" />
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="detail-box">
-                  <div className="heading_container">
+              <div class="col-lg-6">
+                <div class="detail-box">
+                  <div class="heading_container">
                     <h2>
                       Best Savings on <br />
                       new arrivals
@@ -190,11 +322,11 @@ const Home = () => {
                     praesentium totam non nostrum dignissimos nihil eius facere
                     et eaque. Qui, animi obcaecati.
                   </p>
-                  <div className="btn-box">
-                    <a href="#" className="btn1">
+                  <div class="btn-box">
+                    <a href="#" class="btn1">
                       Buy Now
                     </a>
-                    <a href="#" className="btn2">
+                    <a href="#" class="btn2">
                       See More
                     </a>
                   </div>
@@ -204,19 +336,21 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="why_section layout_padding">
-        <div className="container">
-          <div className="heading_container heading_center">
+
+      <section class="why_section layout_padding">
+        <div class="container">
+          <div class="heading_container heading_center">
             <h2>Why Shop With Us</h2>
           </div>
-          <div className="row">
-            <div className="col-md-4">
-              <div className="box ">
-                <div className="img-box">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box ">
+                <div class="img-box">
                   <svg
                     version="1.1"
                     id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg"
+                    // xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px"
                     y="0px"
                     viewBox="0 0 512 512"
@@ -304,15 +438,15 @@ const Home = () => {
                     <g></g>
                   </svg>
                 </div>
-                <div className="detail-box">
+                <div class="detail-box">
                   <h5>Fast Delivery</h5>
                   <p>variations of passages of Lorem Ipsum available</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="box ">
-                <div className="img-box">
+            <div class="col-md-4">
+              <div class="box ">
+                <div class="img-box">
                   <svg
                     version="1.1"
                     id="Capa_1"
@@ -428,15 +562,15 @@ const Home = () => {
                     <g></g>
                   </svg>
                 </div>
-                <div className="detail-box">
+                <div class="detail-box">
                   <h5>Free Shiping</h5>
                   <p>variations of passages of Lorem Ipsum available</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="box ">
-                <div className="img-box">
+            <div class="col-md-4">
+              <div class="box ">
+                <div class="img-box">
                   <svg
                     id="_30_Premium"
                     height="512"
@@ -452,7 +586,7 @@ const Home = () => {
                     </g>
                   </svg>
                 </div>
-                <div className="detail-box">
+                <div class="detail-box">
                   <h5>Best Quality</h5>
                   <p>variations of passages of Lorem Ipsum available</p>
                 </div>
@@ -462,20 +596,20 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="gift_section layout_padding-bottom">
-        <div className="box ">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-md-5">
-                <div className="img_container">
-                  <div className="img-box">
-                    <img src="images/gifts.png" alt="" />
+      <section class="gift_section layout_padding-bottom">
+        <div class="box ">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="img_container">
+                  <div class="img-box">
+                    <img src={Gifts} alt="" />
                   </div>
                 </div>
               </div>
-              <div className="col-md-7">
-                <div className="detail-box">
-                  <div className="heading_container">
+              <div class="col-md-7">
+                <div class="detail-box">
+                  <div class="heading_container">
                     <h2>
                       Gifts for your <br />
                       loved ones
@@ -487,11 +621,11 @@ const Home = () => {
                     vitae minus culpa? Beatae at aut consequuntur porro adipisci
                     aliquam eaque iste ducimus expedita accusantium?
                   </p>
-                  <div className="btn-box">
-                    <a href="#" className="btn1">
+                  <div class="btn-box">
+                    <a href="#" class="btn1">
                       Buy Now
                     </a>
-                    <a href="#" className="btn2">
+                    <a href="#" class="btn2">
                       See More
                     </a>
                   </div>
@@ -501,29 +635,30 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="contact_section ">
-        <div className="container px-0">
-          <div className="heading_container ">
-            <h2 className="">Contact Us</h2>
+
+      <section class="contact_section ">
+        <div class="container px-0">
+          <div class="heading_container ">
+            <h2 class="">Contact Us</h2>
           </div>
         </div>
-        <div className="container container-bg">
-          <div className="row">
-            <div className="col-lg-7 col-md-6 px-0">
-              <div className="map_container">
-                <div className="map-responsive">
+        <div class="container container-bg">
+          <div class="row">
+            <div class="col-lg-7 col-md-6 px-0">
+              <div class="map_container">
+                <div class="map-responsive">
                   <iframe
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
                     width="600"
                     height="300"
                     frameborder="0"
-                    style={{ border: 0, width: "100%", height: "100%" }}
+                    style={{border:"0", width: "100%", height:"100%"}}
                     allowfullscreen
                   ></iframe>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-5 px-0">
+            <div class="col-md-6 col-lg-5 px-0">
               <form action="#">
                 <div>
                   <input type="text" placeholder="Name" />
@@ -537,114 +672,14 @@ const Home = () => {
                 <div>
                   <input
                     type="text"
-                    className="message-box"
+                    class="message-box"
                     placeholder="Message"
                   />
                 </div>
-                <div className="d-flex ">
+                <div class="d-flex ">
                   <button>SEND</button>
                 </div>
               </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="client_section layout_padding">
-        <div className="container">
-          <div className="heading_container heading_center">
-            <h2>Testimonial</h2>
-          </div>
-        </div>
-        <div className="container px-0">
-          <div
-            id="customCarousel2"
-            className="carousel  carousel-fade"
-            data-ride="carousel"
-          >
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <div className="box">
-                  <div className="client_info">
-                    <div className="client_name">
-                      <h5>Morijorch</h5>
-                      <h6>Default model text</h6>
-                    </div>
-                    <i className="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                  <p>
-                    editors now use Lorem Ipsum as their default model text, and
-                    a search for 'lorem ipsum' will uncover many web sites still
-                    in their infancy. Variouseditors now use Lorem Ipsum as
-                    their default model text, and a search for 'lorem ipsum'
-                    will uncover many web sites still in their infancy.
-                    Variouseditors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web
-                    sites still in their infancy. Various
-                  </p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="box">
-                  <div className="client_info">
-                    <div className="client_name">
-                      <h5>Rochak</h5>
-                      <h6>Default model text</h6>
-                    </div>
-                    <i className="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                  <p>
-                    Variouseditors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web
-                    sites still in their infancy. Variouseditors now use Lorem
-                    Ipsum as their default model text, and a search for 'lorem
-                    ipsum' will uncover many web sites still in their infancy.
-                    editors now use Lorem Ipsum as their default model text, and
-                    a search for 'lorem ipsum' will uncover many web sites still
-                    in their infancy.
-                  </p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="box">
-                  <div className="client_info">
-                    <div className="client_name">
-                      <h5>Brad Johns</h5>
-                      <h6>Default model text</h6>
-                    </div>
-                    <i className="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                  <p>
-                    Variouseditors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web
-                    sites still in their infancy, editors now use Lorem Ipsum as
-                    their default model text, and a search for 'lorem ipsum'
-                    will uncover many web sites still in their infancy.
-                    Variouseditors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web
-                    sites still in their infancy. Various
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="carousel_btn-box">
-              <a
-                className="carousel-control-prev"
-                href="#customCarousel2"
-                role="button"
-                data-slide="prev"
-              >
-                <i className="fa fa-angle-left" aria-hidden="true"></i>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
-                className="carousel-control-next"
-                href="#customCarousel2"
-                role="button"
-                data-slide="next"
-              >
-                <i className="fa fa-angle-right" aria-hidden="true"></i>
-                <span className="sr-only">Next</span>
-              </a>
             </div>
           </div>
         </div>
